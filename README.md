@@ -32,7 +32,7 @@ In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
 
 NOTE : Stage 2 and Stage 3 would execute successfully only when Stage 1 has completed the execution
 
-The output of the `$ dvc dag` would look like for this code which is essentially a data pipeline.
+The output of the `$ dvc dag` would look like below for the code versioned in this repository which is essentially a data pipeline.
 
 ![dvc](https://user-images.githubusercontent.com/45694329/134889028-561dd3e0-97c1-4d76-8c24-6865a479dc9a.png)
 
