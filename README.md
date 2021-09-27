@@ -12,5 +12,10 @@ Reference Link : https://dvc.org/
 5. Initialise the dvc. This will result in a .dvc and .dvcignore files : $ dvc init
 7. Create the three python files namely stage_01, stage_02, stage_03 using touch command
 8. Create the yaml file. Here is where all the configuration of the ML pipeline is written. The command is $ touch dvc.yaml
-9. Run the command to see the dvc using the command $ dvc repro
+9. Run the command $ dvc repro
+10. To view the DVC pipeline type $ dvc dag
+
+The DVC dag would look like for this code.
+
+![dvc](https://user-images.githubusercontent.com/45694329/134889028-561dd3e0-97c1-4d76-8c24-6865a479dc9a.png)
 
