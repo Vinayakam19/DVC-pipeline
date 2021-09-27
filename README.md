@@ -12,14 +12,14 @@ Reference Link : https://dvc.org/
 
 # Instructions
 
-1. Create a Conda environment first.The command used is :- $ conda env_name python=3.7 -y
+1. Create a Conda environment first.The command used is :- `$ conda env_name python=3.7 -y`
 2. After creating the environment, activate it using the command $ conda activate env_name
-3. Install the library dvc : $ pip install dvc
-4. Initialise the git : $ git init
-5. Initialise the dvc. This will result in a .dvc and .dvcignore files : $ dvc init
-7. Create the three python files namely stage_01, stage_02, stage_03 using touch command
-8. Create the yaml file. Here is where all the configuration of the ML pipeline is written. The command is $ touch dvc.yaml
-9. Run the command $ dvc repro. Running dvc repro would automatically create a dvc.lock which contains the MDS5 of all the contents.Changing the contents of the file and then running dvc repro will result in change of MD5 of the file.
+3. Install the library dvc : `$ pip install dvc`
+4. Initialise the git : `$ git init`
+5. Initialise the dvc. This will result in a .dvc and .dvcignore files : `$ dvc init`
+7. Create the three python files namely stage_01, stage_02, stage_03 using touch command.
+8. We generate a yaml file called `dvc.yaml` where in we include information about the the command we need to run, the dependencies and the outputs
+9. We reproduce the pipeline by running the command `$ dvc repro`. Running dvc repro would automatically create a dvc.lock that help to track the pipeline outputs.Additionally, it also allows the DVC to detect when dependencies have changed and tracks the intermediate and final outputs of the file.
 10. To view the DVC pipeline type $ dvc dag
 
 In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
