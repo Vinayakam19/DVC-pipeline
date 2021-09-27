@@ -10,7 +10,7 @@ DVC provides the following features :
 
 Reference Link : https://dvc.org/
 
-In this repository we build a very basic Data pipeline, wherein one component will create the file, the other two components will read the file.
+In this repository we build a very basic Data pipeline, wherein one component will create the file, the second component will read the file from the first component and the third component would create another file on the basis of file read from second component.
 
 # Instructions
 
