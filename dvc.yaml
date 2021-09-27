@@ -16,3 +16,15 @@ stages:
     deps:
       - artifacts01.txt
       - stage_02.py
+  
+  stage_03: #name of the stage, which can be changed
+    #Adding the command - which file should be run
+    cmd: python stage_03.py
+    #Adding the dependent files
+    deps:
+      - artifacts01.txt
+      - stage_03.py
+    #Adding the output files
+    outs:
+      - artifacts02.txt
+  
