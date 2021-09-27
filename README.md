@@ -5,22 +5,24 @@ DVC provides the following features :
 1. Experiment tracking with help of DVC studio
 2. Data versioning
 3. Model versioning
-4. Managing the artefacts to and fro from github
+4. Managing the artefacts with help of Git
 5. Building machine learning pipelines
 
 Reference Link : https://dvc.org/
 
+In this repository we build a very basic Data pipeline, wherein one component will create the file, the other two components will read the file.
+
 # Instructions
 
 1. Create a Conda environment first.The command used is :- `$ conda env_name python=3.7 -y`
-2. After creating the environment, activate it using the command $ conda activate env_name
+2. After creating the environment, activate it using the command `$ conda activate env_name`
 3. Install the library dvc : `$ pip install dvc`
 4. Initialise the git : `$ git init`
 5. Initialise the dvc. This will result in a .dvc and .dvcignore files : `$ dvc init`
 7. Create the three python files namely stage_01, stage_02, stage_03 using touch command.
 8. We generate a yaml file called `dvc.yaml` where in we include information about the the command we need to run, the dependencies and the outputs
 9. We reproduce the pipeline by running the command `$ dvc repro`. Running dvc repro would automatically create a dvc.lock that help to track the pipeline outputs.Additionally, it also allows the DVC to detect when dependencies have changed and tracks the intermediate and final outputs of the file.
-10. To view the DVC pipeline type $ dvc dag
+10. To view the DVC pipeline type `$ dvc dag`
 
 In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
 
@@ -28,7 +30,7 @@ In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
 2. The stage 2 would read the contents of the text file artifacts01.txt
 3. In Stage 3, we read the text fike artifacts01.txt and output another text file artifacts02.txt
 
-Stage 2 and Stage 3 would execute successfully only when Stage 1 has completed the execution
+NOTE : Stage 2 and Stage 3 would execute successfully only when Stage 1 has completed the execution
 
 The DVC dag would look like for this code.
 
