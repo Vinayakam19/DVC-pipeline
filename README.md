@@ -1,6 +1,13 @@
 # About DVC :
 DVC is a system for data version control. It is essentially like Git but is used for data. With DVC, you can keep the information about different versions of your data in Git while storing your original data somewhere else.In a typical data science project, the scientists and machine learning experts deal with a large volume of data of various kinds. There are multiple models built with varying configurations, features, with multiple iterations of parameters tuning to get the best performing model. In such a scenario, all the changes we make to data and in the model building process need to be tracked and measured for us to understand what has worked and what has not. It also is necessary to have the option to go back to a specific version and investigate past results. One such tool which lets us track all of this is Data Version Control (DVC) which helps in governing the data, the underlying model and run reproducible results.
 
+DVC provides the following features :
+1. Experiment tracking with help of DVC studio
+2. Data versioning
+3. Model versioning
+4. Managing the artefacts to and fro from github
+5. Building machine learning pipelines
+
 Reference Link : https://dvc.org/
 
 # Instructions
