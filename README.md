@@ -12,7 +12,7 @@ Reference Link : https://dvc.org/
 5. Initialise the dvc. This will result in a .dvc and .dvcignore files : $ dvc init
 7. Create the three python files namely stage_01, stage_02, stage_03 using touch command
 8. Create the yaml file. Here is where all the configuration of the ML pipeline is written. The command is $ touch dvc.yaml
-9. Run the command $ dvc repro
+9. Run the command $ dvc repro. Running dvc repro would automatically create a dvc.lock which contains the MDS5 of all the contents.Changing the contents of the file and then running dvc repro will result in change of MD5 of the file.
 10. To view the DVC pipeline type $ dvc dag
 
 In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
