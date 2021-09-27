@@ -18,7 +18,7 @@ Reference Link : https://dvc.org/
 In this DVC we have three stages namely, Stage 1, Stage 2 and Stage 3
 
 1. In Stage 1, we create the file artifacts01.txt
-2. The stage 2 would read the contents of the artifacts artifacts01.txt
+2. The stage 2 would read the contents of the text file artifacts01.txt
 3. In Stage 3, we read the text fike artifacts01.txt and output another text file artifacts02.txt
 
 Stage 2 and Stage 3 would execute successfully only when Stage 1 has completed the execution
